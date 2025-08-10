@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const name = "hitesh";
 const repoCount = 50;
 
@@ -23,7 +22,6 @@ console.log(newStringone); // "    hitesh    "
 console.log(newStringone.trim()); // "hitesh"
 const url = "https://hitesh.com/hitesh%20choudhary"
 console.log(url.replace('%20', '_'))
-=======
 const name = "hitesh";
 const repoCount = 50;
 
@@ -48,5 +46,4 @@ console.log(newStringone); // "    hitesh    "
 console.log(newStringone.trim()); // "hitesh"
 const url = "https://hitesh.com/hitesh%20choudhary"
 console.log(url.replace('%20', '_'))
->>>>>>> 8e701270f59492e89656cfe1befa8bad6611f473
 url.includes('hitesh')

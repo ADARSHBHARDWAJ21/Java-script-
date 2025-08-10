@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Immediately Invoked Function Expression 
 
 (function chai() {
@@ -8,15 +7,4 @@
 
 ((name) => {
     console.log(`DB CONNECTED TWO ${name}`);
-=======
-// Immediately Invoked Function Expression 
-
-(function chai() {
-    // name IIFE
-    console.log('DB CONNECTED');
-})();
-
-((name) => {
-    console.log(`DB CONNECTED TWO ${name}`);
->>>>>>> 8e701270f59492e89656cfe1befa8bad6611f473
 })('Adarsh');
