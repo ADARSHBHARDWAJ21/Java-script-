@@ -1,7 +1,7 @@
 //const tinderUser = new Object() //single ton object
 const tinderUser = {} //non singleton object
 tinderUser.id = "123abc"
-tinderUser.name = "Adarsh"
+tinderUser.name = "darsh"
 tinderUser.isLoggedIn = false
 //console.log(tinderUser);
 const regularUser ={

@@ -8,23 +8,24 @@ function sayMyName(){
     console.log("H");
 }
 
-// sayMyName()
+ sayMyName() // code execution 
 
-// function addTwoNumbers(number1, number2){
+//function addTwoNumbers(number1, number2){
 
-//     console.log(number1 + number2);
-// }
+  //  console.log(number1 + number2);
+//}
+//addTwoNumbers(3 ,"7")  ///37
 
 function addTwoNumbers(number1, number2){
 
-    // let result = number1 + number2
-    // return result
+     //let result = number1 + number2
+     //return result
     return number1 + number2
 }
 
 const result = addTwoNumbers(3, 5)
 
-// console.log("Result: ", result);
+ console.log("Result: ", result);
 
 
 function loginUserMessage(username = "sam"){
@@ -66,5 +67,5 @@ function returnSecondValue(getArray){
     return getArray[1]
 }
 
-// console.log(returnSecondValue(myNewArray));
+ console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 500, 1000]));

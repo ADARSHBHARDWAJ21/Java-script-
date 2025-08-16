@@ -19,7 +19,7 @@ console.log(jsUser["full name"]);
 console.log(jsUser[mySym]);  // Corrected symbol access
 console.log(typeof jsUser[mySym]);  // Corrected symbol access
 jsUser.email = "Adarsh@chatgpt.com"
-//Object.freeze(jsUser) /// now my email cannot be updated use to freeze LATEST EMAIL
+//Object.freeze(jsUser) /// now my email cannot be updated. it is freezed using object freezed cannot be re wriiten
 jsUser.email  = "ADARSH@MICROSOFT.COM"
 console.log(jsUser);
 

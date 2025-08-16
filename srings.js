@@ -1,49 +1,46 @@
+// Variable declaration
 const name = "hitesh";
 const repoCount = 50;
 
-// Fixed: Use backticks (`) for template literals
-console.log(`hello my name is ${name} and my repo count is ${repoCount}`);
+// Fixed: Template literals require backticks (`) instead of single quotes (').
+console.log(`Hello, my name is ${name} and my repo count is ${repoCount}`);
 
+console.log('--- String Methods ---');
+
+// It's more common to create strings as primitives: const gameName = 'hitesh-hc';
+// But creating a String object with `new` is also valid.
 const gameName = new String('hitesh-hc');
+
 console.log(gameName[0]); // "h"
-console.log(gameName.__proto__); // String prototype
 console.log(gameName.toUpperCase()); // "HITESH-HC"
 console.log(gameName.charAt(2)); // "t"
 console.log(gameName.indexOf('t')); // 2
 
-const newString = gameName.substring(0, 4);
+/*
+ .substring() extracts characters between two indices.
+ It does not accept negative indices.
+*/
+const newString = gameName.substring(0, 4); // Extracts characters from index 0 up to (but not including) 4
 console.log(newString); // "hite"
 
-const anotherString = gameName.slice(-8, 4);
-console.log(anotherString); // "ite" (negative index starts from end)
+/*
+ .slice() is similar to substring but can accept negative indices,
+ which count from the end of the string.
+*/
+const anotherString = gameName.slice(-8, 4); // Starts at 8th char from the end (index 1) and ends at index 4
+console.log(anotherString); // "ite"
 
-const newStringone = "    hitesh    ";
-console.log(newStringone); // "    hitesh    "
-console.log(newStringone.trim()); // "hitesh"
-const url = "https://hitesh.com/hitesh%20choudhary"
-console.log(url.replace('%20', '_'))
-const name = "hitesh";
-const repoCount = 50;
+// .trim() removes whitespace from both ends of a string.
+const newStringOne = "   hitesh   ";
+console.log(newStringOne); // "   hitesh   "
+console.log(newStringOne.trim()); // "hitesh"
 
-// Fixed: Use backticks (`) for template literals
-console.log(`hello my name is ${name} and my repo count is ${repoCount}`);
+const url = "https://hitesh.com/hitesh%20choudhary";
 
-const gameName = new String('hitesh-hc');
-console.log(gameName[0]); // "h"
-console.log(gameName.__proto__); // String prototype
-console.log(gameName.toUpperCase()); // "HITESH-HC"
-console.log(gameName.charAt(2)); // "t"
-console.log(gameName.indexOf('t')); // 2
+// .replace() finds a substring and replaces it.
+// Note: This replaces only the *first* occurrence.
+console.log(url.replace('%20', '-')); // "https://hitesh.com/hitesh-choudhary"
 
-const newString = gameName.substring(0, 4);
-console.log(newString); // "hite"
-
-const anotherString = gameName.slice(-8, 4);
-console.log(anotherString); // "ite" (negative index starts from end)
-
-const newStringone = "    hitesh    ";
-console.log(newStringone); // "    hitesh    "
-console.log(newStringone.trim()); // "hitesh"
-const url = "https://hitesh.com/hitesh%20choudhary"
-console.log(url.replace('%20', '_'))
-url.includes('hitesh')
+// .includes() checks if a string contains a specified substring and returns true or false.
+console.log(url.includes('hitesh')); // true
+console.log(url.includes('sundar')); // false+++

@@ -2,9 +2,9 @@
 let a =300
 
 if(true)
-{let a = 10
+{let a = 10 // global scope
 const b = 20
-console.log("INNER: " , a); 
+console.log("INNER: " , a); //block scope
 }
 
 

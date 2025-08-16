@@ -10,3 +10,4 @@ accountPassword = "332233"
 accountCity = "bengaluru"
 
 console.table([accountID, accountEmail, accountPassword, accountCity]) // corrected variable name
+// prefer not to use var because of issue in block scope and functional scope
