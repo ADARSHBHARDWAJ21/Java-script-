@@ -1,0 +1,3 @@
+$ g++ helloworld.cpp && ./a.out        //to run c ++ command in  workspace file name helloworld.cpp
+node 14_function1.js                      // to run javascript file in github work space file name 14_function.js
+
